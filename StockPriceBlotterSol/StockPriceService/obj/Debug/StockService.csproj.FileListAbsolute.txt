@@ -1,0 +1,5 @@
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\bin\Debug\StockPriceService.dll
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\bin\Debug\StockPriceService.pdb
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\obj\Debug\StockPriceService.dll
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\obj\Debug\StockPriceService.pdb
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\obj\Debug\StockService.csprojResolveAssemblyReference.cache

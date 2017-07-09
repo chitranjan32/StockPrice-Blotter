@@ -1,0 +1,4 @@
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\bin\Release\StockPriceService.dll
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\bin\Release\StockPriceService.pdb
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\obj\Release\StockPriceService.dll
+K:\Studies\GitStockPrice\StockPriceBlotterSol\StockPriceService\obj\Release\StockPriceService.pdb
