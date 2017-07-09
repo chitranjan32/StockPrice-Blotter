@@ -56,8 +56,7 @@ $(function () {
         return false;
 
     };
-
-       $("#Update").click(ajaxFormRefresh);
+       $("form[data-otf-ajax='true']").submit(ajaxFormRefresh);
        $("form[data-otf-ajax='true']").keyup(ajaxKeyPressSearch);
      
 
