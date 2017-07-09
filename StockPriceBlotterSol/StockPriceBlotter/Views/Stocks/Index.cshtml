@@ -11,8 +11,9 @@
 <form method="get" action="@Url.Action("Index")"
       data-otf-ajax="true" data-otf-target="#stockList">
 
-    <input type="search" name="searchTerm"/>
-    <input type="submit" value="Search By Name" />
+    <input type="search" name="searchTerm" id="searchText"/>
+    <input type="button" value="Get Price Updates" id="#Update" />
+    @*<button id="updatePrices" value="Get Price Updates" name="Update"></button>*@
 </form>
 
 

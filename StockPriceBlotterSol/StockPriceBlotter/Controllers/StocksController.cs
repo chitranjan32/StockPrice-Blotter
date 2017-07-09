@@ -13,35 +13,12 @@ namespace StockPriceBlotter.Controllers
     {
         StockRepository _stockRepository = new StockRepository();
 
-        //public ActionResult Autocomplete(string term)
-        //{
-        //    var model =
-        //        _stockRepository.GetStockList()
-        //           .Where(r => r.StockName.Contains(term))
-        //           .Take(10)
-        //           .Select(r => new
-        //           {
-        //               label = r.StockName
-        //           });
-
-        //    return Json(model, JsonRequestBehavior.AllowGet);
-        //}
-
-        //public ActionResult Index(string searchTerm = null)
-        //{
-        //    var model = _stockRepository.GetStockList()
-        //                 .Where(r => searchTerm == null || r.StockName.Contains(searchTerm))
-        //                 .Take(10);
-
-        //    return View(model);
-        //}
-
-        public ActionResult Index(string searchTerm = null, int page = 1)
+       public ActionResult Index(string searchTerm = null, int page = 1)
         {
             var model =
                  _stockRepository.GetStockList()
                    .Where(r => searchTerm == null || r.StockName.Contains(searchTerm))
-                  .ToPagedList(page, 10);
+                  .ToPagedList(page, 13);
 
             if (Request.IsAjaxRequest())
             {
