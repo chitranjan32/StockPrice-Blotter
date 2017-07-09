@@ -4,31 +4,18 @@
 }
 
 
-<div>
+<h2>
     Stock List
-</div>
+</h2>
 
-<form method="get">
+<form method="get" action="@Url.Action("Index")"
+      data-otf-ajax="true" data-otf-target="#stockList">
 
-    <input type="search" name="searchTerm" />
+    <input type="search" name="searchTerm"/>
     <input type="submit" value="Search By Name" />
 </form>
 
-<table>
-    <tr>
-        <th>StockName</th>
-        <th>StockPrice</th>        
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.StockName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StockPrice)
-            </td>
-        </tr>
-    }
-</table>
+@Html.Partial("_Stocks", Model)
+
+

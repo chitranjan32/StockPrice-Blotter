@@ -54,3 +54,7 @@ K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\bin\Antlr3.Runtime.pdb
 K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\obj\Release\StockPriceBlotter.csprojResolveAssemblyReference.cache
 K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\obj\Release\StockPriceBlotter.dll
 K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\obj\Release\StockPriceBlotter.pdb
+K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\bin\PagedList.dll
+K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\bin\PagedList.Mvc.dll
+K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\bin\PagedList.xml
+K:\Studies\GitRepo\StockPriceBlotterSol\StockPriceBlotter\bin\PagedList.Mvc.xml

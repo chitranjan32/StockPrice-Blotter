@@ -1,0 +1,32 @@
+﻿@model PagedList.IPagedList<StockPriceService.Stock>
+
+@using PagedList; 
+@using PagedList.Mvc;
+
+<div id="stockList">
+
+    <div class="pagedList" data-otf-target="#stockList">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+        PagedList.Mvc.PagedListRenderOptions.MinimalWithItemCountText)
+    </div>
+    
+    <table>
+        <tr>
+            <th>StockName</th>
+            <th>StockPrice</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StockName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StockPrice)
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
