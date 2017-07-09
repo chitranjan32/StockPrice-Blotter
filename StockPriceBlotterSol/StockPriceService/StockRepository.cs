@@ -9,7 +9,7 @@ namespace StockPriceService
 {
     public class StockRepository
     {
-        private List<Stock> _stockList;
+        private static List<Stock> _stockList;
         
         public void InitializeStockList()
         {

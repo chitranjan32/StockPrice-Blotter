@@ -30,9 +30,9 @@ namespace StockPriceBlotter
             StockRepository stockPriceService = new StockRepository();
 
             stockPriceService.InitializeStockList();
-            timer = new System.Timers.Timer(5000);
-            timer.Elapsed += (o, e) => { stockPriceService.UpdateStockPrices(); };
-            timer.Start();
+            //timer = new System.Timers.Timer(5000);
+            //timer.Elapsed += (o, e) => { stockPriceService.UpdateStockPrices(); };
+            //timer.Start();
         }
 
     }
