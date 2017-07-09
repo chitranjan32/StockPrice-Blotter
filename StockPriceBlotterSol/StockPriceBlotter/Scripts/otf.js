@@ -81,7 +81,5 @@ $(function () {
     };
        $("form[data-otf-ajax='true']").submit(ajaxFormRefresh);
        $("form[data-otf-ajax='true']").keyup(ajaxKeyPressSearch);
-     
-
-    $(".main-content").on("click", ".pagedList a", getPage);
+       $(".main-content").on("click", ".pagedList a", getPage);
 });

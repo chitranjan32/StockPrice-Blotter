@@ -22,9 +22,13 @@ namespace StockPriceBlotter
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            //Simulate the stock Price movements
             SimulateStocksPriceMovement();
         }
 
+        /// <summary>
+        /// Method to update the stock prices after each 5 seconds.
+        /// </summary>
         private void SimulateStocksPriceMovement()
         {
             StockRepository stockPriceService = new StockRepository();
@@ -32,11 +36,14 @@ namespace StockPriceBlotter
             stockPriceService.InitializeStockList();
             timer = new System.Timers.Timer(5000);
             timer.Elapsed += (o, e) => { stockPriceService.UpdateStockPrices(); };
+            
+            //Calling the timer on a Background thread.
             timer.Start();
         }
 
         protected void Application_End()
         {
+            //Stop timer while application ends
             timer.Stop();
         }
 

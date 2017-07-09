@@ -12,18 +12,20 @@
     
     <table id="stockData">
         <tr>
-            <th>StockName</th>
-            <th>StockPrice</th>
+            <th align="left">Stock Name</th>
+            <th></th>
+            <th align="right">Stock Price</th>
         </tr>
 
         
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td align="left">
                     @Html.DisplayFor(modelItem => item.StockName)
                 </td>
-                <td id="stockPrice">
+                <td></td>
+                <td id="stockPrice" align="center">
                     @Html.DisplayFor(modelItem => item.StockPrice)
                 </td>
                 <td style="display:none;" id="priceMovement">@(item.PriceMovement)</td>
