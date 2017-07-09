@@ -16,6 +16,29 @@ $(function () {
             var $newHtml = $(data);
             $target.replaceWith($newHtml);
             $newHtml.effect("highlight");
+            $newHtml.find("#stockData tr").each(function () {
+
+                var $col = $(this).find("#priceMovement").html();
+                if (typeof ($col) === "undefined")
+                {
+                }
+                else
+                {
+                    if ($col > 0)
+                    {
+                        $(this).find("#stockPrice").css("background-color", "green").attr('title', 'Price Increased.')                        
+                    }
+                    else if ($col < 0)
+                    {
+                        $(this).find("#stockPrice").css("background-color", "red").attr('title', 'Price Decreased.')
+                    }
+                    else
+                    {
+                        $(this).find("#stockPrice").css("background-color", "white").attr('title', 'Price Unchanged.')
+                    }
+                }
+
+            });
         });
 
         return false;

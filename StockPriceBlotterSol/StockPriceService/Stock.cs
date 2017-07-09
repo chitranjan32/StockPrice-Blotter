@@ -10,5 +10,6 @@ namespace StockPriceService
     {
         public string StockName { get; set; }
         public int StockPrice { get; set; }
+        public int PriceMovement { get; set; }
     }
 }

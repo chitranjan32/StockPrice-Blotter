@@ -10,22 +10,25 @@
         PagedList.Mvc.PagedListRenderOptions.MinimalWithItemCountText)
     </div>
     
-    <table>
+    <table id="stockData">
         <tr>
             <th>StockName</th>
             <th>StockPrice</th>
         </tr>
 
+        
         @foreach (var item in Model)
         {
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.StockName)
                 </td>
-                <td>
+                <td id="stockPrice">
                     @Html.DisplayFor(modelItem => item.StockPrice)
                 </td>
+                <td style="display:none;" id="priceMovement">@(item.PriceMovement)</td>
             </tr>
+            
         }
     </table>
 

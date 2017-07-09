@@ -92,15 +92,28 @@ namespace StockPriceService
             Random stockPriceVariance = new Random();
             foreach (Stock stock in _stockList)
             {
-                int updatedPrice = stock.StockPrice + stockPriceVariance.Next(-5, 5);
+                //int updatedPrice = stock.StockPrice + stockPriceVariance.Next(-5, 5);
+                //if (updatedPrice > 0)
+                //{
+                //   stock.StockPrice = updatedPrice;
+                //}
+                //else
+                //{
+                //    stock.StockPrice = 0;                     
+                //}
+
+                int priceMov = stockPriceVariance.Next(-5, 5);
+                int updatedPrice = stock.StockPrice + priceMov;
                 if (updatedPrice > 0)
                 {
-                   stock.StockPrice = updatedPrice;
+                    stock.StockPrice = updatedPrice;
+                    stock.PriceMovement = priceMov;
                 }
                 else
                 {
-                    stock.StockPrice = 0;                     
-                }                
+                    stock.StockPrice = 0;
+                    stock.PriceMovement = priceMov;
+                } 
             }
 
         }        
